@@ -1,0 +1,16 @@
+MOngodb tutorial
+
+-- in entity  (No need to put @Entity)
+        @Document(collection="Book)
+        public class Book {
+
+        }
+
+-- in repository 
+        extends MongoRepository<Book, Integer>
+
+--- app.prop
+
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=BookStore
