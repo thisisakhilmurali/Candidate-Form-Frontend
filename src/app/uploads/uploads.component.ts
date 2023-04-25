@@ -20,6 +20,9 @@ export class UploadsComponent {
   resumeFile: File | null = null;
   profileFile: File | null = null;
 
+  showSuccessMessage: boolean = false; 
+
+
   constructor(private http: HttpClient) { }
 
   onFileSelected(type: string, event: any) {
@@ -47,7 +50,10 @@ export class UploadsComponent {
       skills: this.skills,
       role: this.role,
       availableTime: this.availableTime,
-      availableDate: this.availableDate
+      availableDate: this.availableDate,
+      showSuccessMessage:this.showSuccessMessage = true // set showSuccessMessage to true after submission
+
+
     }
 
 

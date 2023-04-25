@@ -1,61 +1,116 @@
-<div class="row">
-
-    <div class="another">
-
-        <div class="container">
-            Name:
-            <input type="text" [(ngModel)]="candidateName" name="candidateName">
-        </div>
-
-        <div class="container">
-            Aadhar Number:
-            <input type="text" [(ngModel)]="aadharNumber" name="aadharNumber">
-        </div>
-
-        <div class="container">
-            PAN Number:
-            <input type="text" [(ngModel)]="panNumber" name="panNumber">
-        </div>
-
-        <div class="container">
-            Experience:
-            <input type="number" [(ngModel)]="experience" name="experience">
-        </div>
-
-        <div class="container">
-            Skills:
-            <input type="text" [(ngModel)]="skills" name="skills">
-        </div>
-
-        <div class="container">
-            Role:
-            <input type="text" [(ngModel)]="role" name="role">
-        </div>
-
-        <div class="container">
-            Available Date:
-            <input type="date" [(ngModel)]="availableDate" name="availableDate">
-        </div>
-
-        <div class="container">
-            Available Time:
-            <input type="time" [(ngModel)]="availableTime" name="availableTime">
-        </div>
-
-
-        <div class="container">
-            Resume:
-            <input type="file" name="pdf" (change)="onFileSelected('resume', $event)" accept=".pdf,.doc,.docx">
-        </div>
-
-        <div class="container">
-            Current Photograph:
-            <input type="file" name="image" (change)="onFileSelected('profile', $event)" accept=".jpg,.jpeg,.png">
-        </div>
-
-        <div class="container">
-            <button (click)="uploadFiles()">Upload</button>
+<!-- <!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>CANDIDATE FORM</h1>
+    <div class="form-container">
+    <div class="row">
+        <div class="another">
+            <div class="container">
+                <label for="candidateName">Name:</label>
+                <input type="text" [(ngModel)]="candidateName" name="candidateName" id="candidateName" placeholder="Enter your full name">
+            </div>
+            <div class="container">
+                <label for="aadharNumber">Aadhar Number:</label>
+                <input type="text" [(ngModel)]="aadharNumber" name="aadharNumber" id="aadharNumber" placeholder="Enter your Aadhar number">
+            </div>
+            <div class="container">
+                <label for="panNumber">PAN Number:</label>
+                <input type="text" [(ngModel)]="panNumber" name="panNumber" id="panNumber" placeholder="Enter your PAN number">
+            </div>
+            <div class="container">
+                <label for="experience">Experience:</label>
+                <input type="number" [(ngModel)]="experience" name="experience" id="experience" placeholder="Enter your experience in years">
+            </div>
+            <div class="container">
+                <label for="skills">Skills:</label>
+                <input type="text" [(ngModel)]="skills" name="skills" id="skills" placeholder="Enter your skills">
+            </div>
+            <div class="container">
+                <label for="role">Role:</label>
+                <input type="text" [(ngModel)]="role" name="role" id="role" placeholder="Enter the role you are applying for">
+            </div>
+            <div class="container">
+                <label for="availableDate">Available Date:</label>
+                <input type="date" [(ngModel)]="availableDate" name="availableDate" id="availableDate" placeholder="Enter the date when you will be available to work">
+            </div>
+            <div class="container">
+                <label for="availableTime">Available Time:</label>
+                <input type="time" [(ngModel)]="availableTime" name="availableTime" id="availableTime" placeholder="Enter the time when you will be available to work">
+            </div>
+            <div class="container">
+                <label for="resume">Resume:</label>
+                <input type="file" name="pdf" (change)="onFileSelected('resume', $event)" accept=".pdf,.doc,.docx" id="resume" placeholder="Upload your resume">
+            </div>
+            <div class="container">
+                <label for="profile">Current Photograph:</label>
+                <input type="file" name="image" (change)="onFileSelected('profile', $event)" accept=".jpg,.jpeg,.png" id="profile" placeholder="Upload your current photograph">
+            </div>
+            <div class="container">
+                <button (click)="uploadFiles()">Upload</button>
+            </div>
         </div>
     </div>
-
 </div>
+</body> -->
+
+
+
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>CANDIDATE FORM</h1>
+    <div class="form-container">
+    <div class="row">
+        <div class="another">
+            <div class="container">
+                <label for="candidateName">Name:</label>
+                <input type="text" [(ngModel)]="candidateName" name="candidateName" id="candidateName" placeholder="Enter your full name">
+            </div>
+            <div class="container">
+                <label for="aadharNumber">Aadhar Number:</label>
+                <input type="text" [(ngModel)]="aadharNumber" name="aadharNumber" id="aadharNumber" placeholder="Enter your Aadhar number">
+            </div>
+            <div class="container">
+                <label for="panNumber">PAN Number:</label>
+                <input type="text" [(ngModel)]="panNumber" name="panNumber" id="panNumber" placeholder="Enter your PAN number">
+            </div>
+            <div class="container">
+                <label for="experience">Experience:</label>
+                <input type="number" [(ngModel)]="experience" name="experience" id="experience" placeholder="Enter your experience in years">
+            </div>
+            <div class="container">
+                <label for="skills">Skills:</label>
+                <input type="text" [(ngModel)]="skills" name="skills" id="skills" placeholder="Enter your skills">
+            </div>
+            <div class="container">
+                <label for="role">Role:</label>
+                <input type="text" [(ngModel)]="role" name="role" id="role" placeholder="Enter the role you are applying for">
+            </div>
+            <div class="container">
+                <label for="availableDate">Available Date:</label>
+                <input type="date" [(ngModel)]="availableDate" name="availableDate" id="availableDate" placeholder="Enter the date when you will be available to work">
+            </div>
+            <div class="container">
+                <label for="availableTime">Available Time:</label>
+                <input type="time" [(ngModel)]="availableTime" name="availableTime" id="availableTime" placeholder="Enter the time when you will be available to work">
+            </div>
+            <div class="container">
+                <label for="resume">Resume:</label>
+                <input type="file" name="pdf" (change)="onFileSelected('resume', $event)" accept=".pdf,.doc,.docx" id="resume" placeholder="Upload your resume">
+            </div>
+            <div class="container">
+                <label for="profile">Current Photograph:</label>
+                <input type="file" name="image" (change)="onFileSelected('profile', $event)" accept=".jpg,.jpeg,.png" id="profile" placeholder="Upload your current photograph">
+            </div>
+            <div class="container">
+                <button (click)="uploadFiles()">Upload</button>
+            </div>
+            <div class="container">
+                <div class="success-message" *ngIf="showSuccessMessage">Thank you for Submitting your Details</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
