@@ -60,55 +60,55 @@
 <head>
 </head>
 <body>
-    <h1>CANDIDATE FORM</h1>
+    <h1>APPLICATION FORM (Candidate)</h1>
     <div class="form-container">
     <div class="row">
         <div class="another">
             <div class="container">
-                <label for="candidateName">Name:</label>
+                <label for="candidateName">Name</label>
                 <input type="text" [(ngModel)]="candidateName" name="candidateName" id="candidateName" placeholder="Enter your full name">
             </div>
             <div class="container">
-                <label for="aadharNumber">Aadhar Number:</label>
-                <input type="text" [(ngModel)]="aadharNumber" name="aadharNumber" id="aadharNumber" placeholder="Enter your Aadhar number">
+                <label for="aadharNumber">Aadhaar Number</label>
+                <input type="text" [(ngModel)]="aadharNumber" name="aadharNumber" id="aadharNumber" placeholder="Enter your Aadhaar number">
             </div>
             <div class="container">
-                <label for="panNumber">PAN Number:</label>
+                <label for="panNumber">PAN Number</label>
                 <input type="text" [(ngModel)]="panNumber" name="panNumber" id="panNumber" placeholder="Enter your PAN number">
             </div>
             <div class="container">
-                <label for="experience">Experience:</label>
+                <label for="experience">Experience</label>
                 <input type="number" [(ngModel)]="experience" name="experience" id="experience" placeholder="Enter your experience in years">
             </div>
             <div class="container">
-                <label for="skills">Skills:</label>
+                <label for="skills">Skills</label>
                 <input type="text" [(ngModel)]="skills" name="skills" id="skills" placeholder="Enter your skills">
             </div>
             <div class="container">
-                <label for="role">Role:</label>
+                <label for="role">Role</label>
                 <input type="text" [(ngModel)]="role" name="role" id="role" placeholder="Enter the role you are applying for">
             </div>
             <div class="container">
-                <label for="availableDate">Available Date:</label>
+                <label for="availableDate">Available Date</label>
                 <input type="date" [(ngModel)]="availableDate" name="availableDate" id="availableDate" placeholder="Enter the date when you will be available to work">
             </div>
             <div class="container">
-                <label for="availableTime">Available Time:</label>
+                <label for="availableTime">Available Time</label>
                 <input type="time" [(ngModel)]="availableTime" name="availableTime" id="availableTime" placeholder="Enter the time when you will be available to work">
             </div>
             <div class="container">
-                <label for="resume">Resume:</label>
+                <label for="resume">Resume</label>
                 <input type="file" name="pdf" (change)="onFileSelected('resume', $event)" accept=".pdf,.doc,.docx" id="resume" placeholder="Upload your resume">
             </div>
             <div class="container">
-                <label for="profile">Current Photograph:</label>
+                <label for="profile">Current Photograph</label>
                 <input type="file" name="image" (change)="onFileSelected('profile', $event)" accept=".jpg,.jpeg,.png" id="profile" placeholder="Upload your current photograph">
             </div>
             <div class="container">
-                <button (click)="uploadFiles()">Upload</button>
+                <button (click)="uploadFiles()">Save Details</button>
             </div>
             <div class="container">
-                <div class="success-message" *ngIf="showSuccessMessage">Thank you for Submitting your Details</div>
+                <div class="success-message" *ngIf="showSuccessMessage">Your details are saved. Please check your mail.</div>
             </div>
         </div>
     </div>
